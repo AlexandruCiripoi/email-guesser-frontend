@@ -85,7 +85,7 @@ export const GuesserForm = () => {
                   <Form.Control
                     type="firstName"
                     placeholder="First Name"
-                    {...register("lastName", {
+                    {...register("firstName", {
                       required: true,
                       minLength: 2,
                       maxLength: 30,
@@ -121,7 +121,7 @@ export const GuesserForm = () => {
                 >
                   <Form.Control
                     type="lastName"
-                    placeholder="First Name"
+                    placeholder="Last Name"
                     {...register("lastName", {
                       required: true,
                       minLength: 2,
