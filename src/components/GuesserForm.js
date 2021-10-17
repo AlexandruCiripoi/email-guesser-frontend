@@ -33,7 +33,7 @@ export const GuesserForm = () => {
     try {
       setLoading(true);
       const resp = await axios.post(
-        `${process.env.REACT_APP_EMAIL_GUESSER_API}/guesser`,
+        `https://email-guesser-backend.herokuapp.com/guesser`,
         data
       );
       const newData = [...guesses, resp.data];
